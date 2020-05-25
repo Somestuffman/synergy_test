@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <row>
+    <name>Слава Шоков</name>
+    <grades>
+      <subject>math</subject>
+      <score>2</score>
+    </grades>
+    <grades>
+      <subject>rus</subject>
+      <score>3</score>
+    </grades>
+    <grades>
+      <subject>phys</subject>
+      <score>3</score>
+    </grades>
+  </row>
+  <row>
+    <name>Вера Климова</name>
+    <grades>
+      <subject>math</subject>
+      <score>3</score>
+    </grades>
+    <grades>
+      <subject>rus</subject>
+      <score>4</score>
+    </grades>
+    <grades>
+      <subject>phys</subject>
+      <score>3</score>
+    </grades>
+  </row>
+  <row>
+    <name>Даша Шорова</name>
+    <grades>
+      <subject>math</subject>
+      <score>5</score>
+    </grades>
+    <grades>
+      <subject>rus</subject>
+      <score>5</score>
+    </grades>
+    <grades>
+      <subject>phys</subject>
+      <score>5</score>
+    </grades>
+  </row>
+  <row>
+    <name>Галя Гирева</name>
+    <grades>
+      <subject>math</subject>
+      <score>4</score>
+    </grades>
+    <grades>
+      <subject>rus</subject>
+      <score>4</score>
+    </grades>
+    <grades>
+      <subject>phys</subject>
+      <score>4</score>
+    </grades>
+  </row>
+  <row>
+    <name>Боря Ягодкин</name>
+    <grades>
+      <subject>math</subject>
+      <score>5</score>
+    </grades>
+    <grades>
+      <subject>rus</subject>
+      <score>4</score>
+    </grades>
+    <grades>
+      <subject>phys</subject>
+      <score>5</score>
+    </grades>
+  </row>
+  <row>
+    <name>Степа Киров</name>
+    <grades>
+      <subject>math</subject>
+      <score>4</score>
+    </grades>
+    <grades>
+      <subject>rus</subject>
+      <score>4</score>
+    </grades>
+    <grades>
+      <subject>phys</subject>
+      <score>5</score>
+    </grades>
+  </row>
+  <row>
+    <name>Максим Буйнов</name>
+    <grades>
+      <subject>math</subject>
+      <score>4</score>
+    </grades>
+    <grades>
+      <subject>rus</subject>
+      <score>4</score>
+    </grades>
+    <grades>
+      <subject>phys</subject>
+      <score>5</score>
+    </grades>
+  </row>
+</root>

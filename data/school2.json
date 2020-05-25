@@ -1,0 +1,23 @@
+{
+  "mathematics": [
+    { "student": "Арсений Колобов", "grade": 3 },
+    { "student": "Коля Колобов", "grade": 5 },
+    { "student": "Азиз Роков", "grade": 3 },
+    { "student": "Маша Майкова", "grade": 5 },
+    { "student": "Оля Светлова", "grade": 2 }
+  ],
+  "russian_language": [
+    { "student": "Арсений Колобов", "grade": 4 },
+    { "student": "Коля Колобов", "grade": 3 },
+    { "student": "Азиз Роков", "grade": 4 },
+    { "student": "Маша Майкова", "grade": 3 },
+    { "student": "Оля Светлова", "grade": 3 }
+  ],
+  "physics": [
+    { "student": "Арсений Колобов", "grade": 3 },
+    { "student": "Коля Колобов", "grade": 4 },
+    { "student": "Азиз Роков", "grade": 4 },
+    { "student": "Маша Майкова", "grade": 5 },
+    { "student": "Оля Светлова", "grade": 3 }
+  ]
+}
