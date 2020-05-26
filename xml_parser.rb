@@ -1,16 +1,22 @@
 require 'active_support/core_ext/hash'
 require 'nokogiri'
-require './strategies'
+require './base_parser'
 
 class XmlParser
-  def self.call(filepath)
-    data = begin
-      content = Nokogiri::XML.parse(File.read(filepath)).remove_namespaces!.to_xml
-      Hash.from_xml(content)
+  class << self
+    def call(filepath)
+      data = extract_data(filepath)
+      BaseParser.call(data, filepath)
     end
 
-    strategy = ::Strategies::CLASSES.find { |str| str.responds?(data) }
+    private
 
-    [strategy.grades_sum(data), strategy.low_grade_students(data), strategy.total_students(data)]
+    def extract_data(filepath)
+      content = Nokogiri::XML.parse(File.read(filepath))
+                             .remove_namespaces!
+                             .to_xml
+
+      Hash.from_xml(content)
+    end
   end
 end

@@ -1,15 +1,17 @@
 require 'json'
-require './strategies'
+require './base_parser'
 
 class JsonParser
-  def self.call(filepath)
-    data = JSON.parse(File.read(filepath))
-    strategy = ::Strategies::CLASSES.find { |str| str.responds?(data) }
+  class << self
+    def call(filepath)
+      data = extract_data(filepath)
+      BaseParser.call(data, filepath)
+    end
 
-    [
-      strategy.grades_sum(data),
-      strategy.low_grade_students(data),
-      strategy.total_students(data)
-    ]
+    private
+
+    def extract_data(filepath)
+      JSON.parse(File.read(filepath))
+    end
   end
 end
