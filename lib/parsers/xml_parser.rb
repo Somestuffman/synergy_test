@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require 'active_support/core_ext/hash'
 require 'nokogiri'
-require './base_parser'
+require './lib/parsers/base_parser'
 
 class XmlParser
   class << self

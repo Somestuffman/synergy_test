@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 require 'json'
-require './base_parser'
+require './lib/parsers/base_parser'
 
 class JsonParser
   class << self

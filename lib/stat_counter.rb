@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'active_support/core_ext'
-require './json_parser'
-require './xml_parser'
+require './lib/parsers/json_parser'
+require './lib/parsers/xml_parser'
 
 class StatCounter
-  DATA_FOLDER = 'data'.freeze
+  DATA_FOLDER = 'data'
 
   class << self
     def call
@@ -23,7 +25,7 @@ class StatCounter
       low_grades = total = 0
 
       Dir.each_child(DATA_FOLDER) do |file|
-        filepath = "#{DATA_FOLDER}/#{file}"
+        filepath = File.join(DATA_FOLDER, file)
         result = "#{file.split('.').last}_parser".classify.constantize.call(filepath)
 
         grades = add_grades(grades, result[0])
